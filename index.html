@@ -50,9 +50,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mr-2 d-flex justify-content-between" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mr-2 d-flex flex-column flex-lg-row justify-content-between"
+          id="navbarSupportedContent"
+        >
           <ul
             class="navbar-nav mr-2 mb-2 mb-lg-0 d-flex justify-content-evenly"
+            style="width: 100%"
           >
             <li class="nav-item">
               <a class="nav-link" href="#top-page">Inicio</a>
@@ -101,12 +105,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#footer-page">Contacto</a>
             </li>
-            <div class="cont-buttons d-flex flex-row justify-content-evenly" style="width: 100%;">  
-              <a class="rainbow-hover" href="./html/register.html">Registrarse</a>
-              <a class="rainbow-hover" href="./html/login.html">Iniciar</a>
-            </div>
           </ul>
-         
+          <div class="cont-buttons nav-item d-flex flex-row justify-content-evenly" >
+            <li type="button" class="nav-item btn btn-primary p-2" style="margin-right: 1rem;">
+              <a class="nav-link p-0" href="./html/register.html"
+                >Registrarse</a
+              >
+            </li>
+
+            <li type="button" class="btn nav-item btn-secondary p-2">
+              <a class="nav-link p-0" href="./html/login.html">Iniciar</a>
+            </li>
+          </div>
         </div>
       </div>
     </nav>
